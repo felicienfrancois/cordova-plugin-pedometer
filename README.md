@@ -1,22 +1,13 @@
-## Core Motion Pedometer Plugin for Cordova [![npm version](https://badge.fury.io/js/cordova-plugin-pedometer.svg)](http://badge.fury.io/js/cordova-plugin-pedometer)
+## Pedometer Plugin for Cordova, forked from official one, but with bug fixes 
 
-**Fetch pedestrian-related pedometer data, such as step counts and other information about the distance travelled.**
 
 ## Install
-
-#### Latest published version on npm (with Cordova CLI >= 5.0.0)
-
-```
-cordova plugin add cordova-plugin-pedometer
-```
 
 #### Latest version from GitHub
 
 ```
-cordova plugin add https://github.com/leecrossley/cordova-plugin-pedometer.git
+cordova plugin add https://github.com/dariosalvi78/cordova-plugin-pedometer.git
 ```
-
-You **do not** need to reference any JavaScript, the Cordova plugin architecture will add a pedometer object to your root automatically when you build.
 
 ## Check feature support (iOS only)
 
@@ -104,7 +95,7 @@ pedometer.queryData(successHandler, onError, options);
 ## Platform and device support
 
 - iOS 8+. These capabilities are not supported on all devices, even with iOS 8, so please ensure you use the *check feature support* functions.
-- Android (when associated hardware is available). Only live pedometer data is supported.
+- Android (when step counting hardware is available). Only live pedometer data is supported.
 
 ## License
 
