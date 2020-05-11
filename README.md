@@ -9,7 +9,7 @@
 cordova plugin add https://github.com/dariosalvi78/cordova-plugin-pedometer.git
 ```
 
-## Check feature support (iOS only)
+## Check feature support
 
 ### isStepCountingAvailable
 
@@ -19,7 +19,7 @@ pedometer.isStepCountingAvailable(successCallback, failureCallback);
 - => `successCallback` is called with true if the feature is supported, otherwise false
 - => `failureCallback` is called if there was an error determining if the feature is supported
 
-### isDistanceAvailable
+### isDistanceAvailable (iOS only)
 
 ```js
 pedometer.isDistanceAvailable(successCallback, failureCallback);
@@ -29,7 +29,7 @@ Distance estimation indicates the ability to use step information to supply the 
 
 This capability is not supported on all devices, even with iOS 8.
 
-### isFloorCountingAvailable
+### isFloorCountingAvailable (iOS only)
 
 ```js
 pedometer.isFloorCountingAvailable(successCallback, failureCallback);
