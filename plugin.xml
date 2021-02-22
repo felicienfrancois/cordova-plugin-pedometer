@@ -34,5 +34,9 @@
             </feature>
         </config-file>
         <source-file src="src/android/PedoListener.java" target-dir="src/org/apache/cordova/pedometer" />
+
+        <config-file target="AndroidManifest.xml" parent="/*">
+            <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION" />
+        </config-file>
     </platform>
 </plugin>
