@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="cordova-plugin-pedometer" version="0.4.1">
-    <name>Core Motion Pedometer</name>
-    <author>Lee Crossley (http://ilee.co.uk/)</author>
-    <description>Cordova / PhoneGap Plugin for the Core Motion Pedometer to fetch pedestrian-related data,
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="cordova-plugin-pedometer" version="0.4.2">
+    <name>Cordova Pedometer</name>
+    <author>Lee Crossley (http://ilee.co.uk/) and Dario Salvi </author>
+    <description>Cordova / PhoneGap Plugin for the Pedometer to fetch pedestrian-related data,
         such as step counts and other information about the distance travelled.</description>
     <keywords>cordova, core motion, pedometer, steps, distance, pedestrian</keywords>
     <license>MIT</license>
@@ -22,6 +22,10 @@
         <header-file src="src/ios/Pedometer.h" />
         <source-file src="src/ios/Pedometer.m" />
         <framework src="CoreMotion.framework" />
+        <!-- Usage description of Motion, mandatory since iOS 10 -->
+        <config-file target="*-Info.plist" parent="NSMotionUsageDescription">
+            <string>This app needs to access the step counter</string>
+        </config-file>
     </platform>
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
@@ -30,5 +34,9 @@
             </feature>
         </config-file>
         <source-file src="src/android/PedoListener.java" target-dir="src/org/apache/cordova/pedometer" />
+
+        <config-file target="AndroidManifest.xml" parent="/*">
+            <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION" />
+        </config-file>
     </platform>
 </plugin>
