@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/dariosalvi78/cordova-plugin-pedometer"
+    "url": "https://github.com/felicienfrancois/cordova-plugin-pedometer"
   },
   "keywords": [
     "cordova",
@@ -36,7 +36,7 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/dariosalvi78/cordova-plugin-pedometer/issues"
+    "url": "https://github.com/felicienfrancois/cordova-plugin-pedometer/issues"
   },
-  "homepage": "https://github.com/leecrossley/cordova-plugin-pedometer#readme"
+  "homepage": "https://github.com/felicienfrancois/cordova-plugin-pedometer#readme"
 }
